@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { hackathonProjects } from "../data/content";
-import { Github, Globe, Trophy } from "lucide-react";
+import { Github, Globe, Trophy, Youtube } from "lucide-react";
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -87,6 +87,11 @@ export default function ProjectsSection() {
                                 {project.links.github && (
                                     <a href={project.links.github} target="_blank" rel="noreferrer" className="px-6 py-3 glass text-foreground rounded-full font-semibold hover:bg-foreground/10 transition-colors flex items-center gap-2">
                                         <Github className="w-4 h-4" /> Source
+                                    </a>
+                                )}
+                                {project.links.youtube && (
+                                    <a href={project.links.youtube} target="_blank" rel="noreferrer" className="px-6 py-3 glass text-foreground rounded-full font-semibold hover:bg-foreground/10 transition-colors flex items-center gap-2">
+                                        <Youtube className="w-4 h-4" /> Youtube
                                     </a>
                                 )}
                             </div>

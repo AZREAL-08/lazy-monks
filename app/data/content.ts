@@ -10,7 +10,7 @@ export const teamMembers = [
         skills: ["React", "Next.js", "Node.js", "TypeScript"],
         socials: {
             github: "https://github.com/nikhil-r0",
-            linkedin: "https://linkedin.com",
+            linkedin: "https://www.linkedin.com/in/nikhil-r-917276203/",
         }
     },
     {
@@ -67,7 +67,7 @@ export const hackathonProjects = [
         ],
         links: {
             github: "https://github.com/nikhil-r0/samudra-prahari-ecosystem",
-            demo: "https://example.com",
+            youtube: "https://youtu.be/5G5odwkGp0A?si=59ijkQ4nmovnlKrA"
         }
     },
     {
@@ -84,7 +84,7 @@ export const hackathonProjects = [
         ],
         links: {
             github: "https://github.com/nikhil-r0/veris-ecosystem",
-            demo: "https://example.com",
+            youtube: "https://youtu.be/OmviNm0HJbg?si=FOHg5iS0qO9Ne72D"
         }
     },
     {
@@ -101,8 +101,7 @@ export const hackathonProjects = [
             "Vercel"
         ],
         links: {
-            github: "https://github.com",
-            demo: "https://example.com",
+            github: "https://github.com/nikhil-r0/sauda-web",
         }
     },
     {
@@ -117,8 +116,8 @@ export const hackathonProjects = [
             "Firebase"
         ],
         links: {
-            github: "https://github.com",
-            demo: "https://example.com",
+            github: "https://github.com/nikhil-r0/contractiq-backend",
+            youtube: "https://youtu.be/BFNKKWBWCJk?si=mIpAhUYYSHzkPOfB"
         }
     }
 ];
