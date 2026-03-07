@@ -57,11 +57,16 @@ export const teamMembers = [
 export const hackathonProjects = [
     {
         id: "proj-1",
-        title: "NeuroSync",
+        title: "Samudra Prahari",
         hackathon: "Global Hack Week 2025",
-        description: "An AI-powered focus application that analyzes your workflow patterns and optimizes your breaks. Won 1st place in the Productivity Track.",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-        techStack: ["Next.js", "Python", "Vercel AI SDK", "Tailwind"],
+        description: "A decentralized offline chat application built with React Native (Expo) that enables peer-to-peer messaging without internet using Bluetooth Low Energy (BLE) mesh networking. It allows nearby devices to discover each other and communicate through public or encrypted private channels, making it useful for remote, emergency, or off-grid communication.",
+        image: "/Samudra.png",
+        techStack: [
+            "React Native(Expo)",
+            "BLE Mesh Networking",
+            "Bluetooth Low Energy",
+            "React webpage"
+        ],
         links: {
             github: "https://github.com",
             demo: "https://example.com",
@@ -69,11 +74,16 @@ export const hackathonProjects = [
     },
     {
         id: "proj-2",
-        title: "EcoChain",
+        title: "Veris Truth Engine",
         hackathon: "EarthHack 24",
-        description: "A decentralized platform for tracking carbon offsets using smart contracts to ensure transparency in corporate emissions reporting.",
-        image: "https://images.unsplash.com/photo-1618044733300-9472054094ee?auto=format&fit=crop&q=80&w=800",
-        techStack: ["React", "Solidity", "Ethers.js", "Node.js"],
+        description: "Veris Ecosystem is a full-stack platform for an autonomous investigative AI agent, using a Python/LangGraph backend and Next.js frontend to enable AI-driven investigation, reasoning, and interactive visualization of evidence and insights.",
+        image: "/veris.png",
+        techStack: [
+            "Python",
+            "LangGraph",
+            "Node.js",
+            "Next.js"
+        ],
         links: {
             github: "https://github.com",
             demo: "https://example.com",
@@ -81,11 +91,33 @@ export const hackathonProjects = [
     },
     {
         id: "proj-3",
-        title: "Visionary API",
+        title: "Sauda (सौदा)",
         hackathon: "Build with AI",
-        description: "A plug-and-play accessibility tool that automatically generates descriptive alt-text for legacy websites using computer vision.",
-        image: "https://images.unsplash.com/photo-1555949963-aa79dcee57d5?auto=format&fit=crop&q=80&w=800",
-        techStack: ["FastAPI", "OpenCV", "React", "Docker"],
+        description: "A fair, community-driven, and modern marketplace where buying, selling, and bartering second-hand goods is as simple as it should be.",
+        image: "/sauda.png",
+        techStack: [
+            "Next.js",
+            "Supabase",
+            "Tailwind CSS",
+            "Solidity",
+            "Vercel"
+        ],
+        links: {
+            github: "https://github.com",
+            demo: "https://example.com",
+        }
+    },
+    {
+        id: "proj-4",
+        title: "Contract IQ",
+        hackathon: "Build with AI",
+        description: "ContractIQ is an automated notification system for managing digital contracts. The system extracts key contract details (such as effective dates and term durations), calculates termination dates, schedules email notifications, and sends timely alerts using an SMTP server. It leverages the Gemini API for data extraction and integrates with Firebase for database operations.",
+        image: "/Contract.jpeg",
+        techStack: [
+            "Python",
+            "Flask",
+            "Firebase"
+        ],
         links: {
             github: "https://github.com",
             demo: "https://example.com",

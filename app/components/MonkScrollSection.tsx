@@ -254,11 +254,7 @@ export default function MonkScrollSection() {
             {/* Pinned container */}
             <div
                 ref={pinnedRef}
-                className="h-screen w-full overflow-hidden"
-                style={{
-                    background:
-                        "linear-gradient(to bottom, #76ADD2 0%, #76ADD2 30%, #99A1A6 100%)",
-                }}
+                className="h-screen w-full overflow-hidden bg-transparent"
             >
                 {/* Two-column grid */}
                 <div className="h-full grid grid-cols-1 md:grid-cols-2">
@@ -281,12 +277,12 @@ export default function MonkScrollSection() {
                             ref={text1Ref}
                             className="absolute inset-0 flex flex-col items-center justify-center px-8 md:px-16"
                         >
-                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
                                 The Lazy
                                 <br />
-                                <span className="text-amber-200">Monk</span>
+                                <span className="text-amber-500 dark:text-amber-200">Monk</span>
                             </h2>
-                            <p className="text-white/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
+                            <p className="text-foreground/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
                                 In stillness, the journey begins. A single breath before the
                                 storm of creation.
                             </p>
@@ -298,12 +294,12 @@ export default function MonkScrollSection() {
                             className="absolute inset-0 flex flex-col items-center justify-center px-8 md:px-16"
                             style={{ opacity: 0 }}
                         >
-                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
                                 Awakening
                                 <br />
-                                <span className="text-cyan-200">to the Code</span>
+                                <span className="text-cyan-500 dark:text-cyan-200">to the Code</span>
                             </h2>
-                            <p className="text-white/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
+                            <p className="text-foreground/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
                                 Eyes open. Fingers type. The monk transforms idle thought into
                                 electric purpose.
                             </p>
@@ -315,12 +311,12 @@ export default function MonkScrollSection() {
                             className="absolute inset-0 flex flex-col items-center justify-center px-8 md:px-16"
                             style={{ opacity: 0 }}
                         >
-                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight">
+                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-4 leading-tight">
                                 Flow
                                 <br />
-                                <span className="text-emerald-200">State</span>
+                                <span className="text-emerald-500 dark:text-emerald-200">State</span>
                             </h2>
-                            <p className="text-white/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
+                            <p className="text-foreground/70 text-lg md:text-xl max-w-md text-center leading-relaxed">
                                 Time dissolves. Code flows like water. The monk and the machine
                                 become one.
                             </p>

@@ -53,7 +53,7 @@ export default function ProjectsSection() {
                                 <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full aspect-video object-cover transition-transform duration-700 group-hover:scale-105"
+                                    className="w-full aspect-video object-contain transition-transform duration-700 group-hover:scale-105"
                                 />
                             </div>
                         </div>

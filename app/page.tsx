@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <main className="bg-background min-h-screen text-foreground relative">
+    <main className="bg-transparent min-h-screen text-foreground relative">
       <HeroSection />
       <MonkScrollSection />
       <ScrollRevealSection />
