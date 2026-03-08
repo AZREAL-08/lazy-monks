@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { hackathonProjects } from "../data/content";
-import { Github, Globe, Trophy, Youtube } from "lucide-react";
+import { projects } from "../data/content";
+import { Globe } from "lucide-react";
+import { FaGithub, FaYoutube } from "react-icons/fa"
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -40,7 +41,7 @@ export default function ProjectsSection() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="flex flex-col gap-12"
             >
-                {hackathonProjects.map((project, index) => (
+                {projects.map((project, index) => (
                     <motion.div
                         key={project.id}
                         variants={itemVariants}
@@ -51,7 +52,7 @@ export default function ProjectsSection() {
                             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/20 to-amber-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-20 pointer-events-none" />
                             <div className="relative overflow-hidden rounded-xl">
                                 <img
-                                    src={project.image}
+                                    src={`${project.imageFolder}/${project.thumbnail}`}
                                     alt={project.title}
                                     className="w-full aspect-video object-contain transition-transform duration-700 group-hover:scale-105"
                                 />
@@ -61,7 +62,6 @@ export default function ProjectsSection() {
                         {/* Content Side */}
                         <div className="w-full lg:w-1/2 flex flex-col justify-center">
                             <div className="flex items-center gap-2 mb-4 text-orange-500">
-                                <Trophy className="w-5 h-5" />
                                 <span className="font-semibold text-sm uppercase tracking-wider">{project.hackathon}</span>
                             </div>
 
@@ -86,12 +86,17 @@ export default function ProjectsSection() {
                                 )}
                                 {project.links.github && (
                                     <a href={project.links.github} target="_blank" rel="noreferrer" className="px-6 py-3 glass text-foreground rounded-full font-semibold hover:bg-foreground/10 transition-colors flex items-center gap-2">
-                                        <Github className="w-4 h-4" /> Source
+                                        <FaGithub className="w-4 h-4" /> Source
                                     </a>
                                 )}
                                 {project.links.youtube && (
                                     <a href={project.links.youtube} target="_blank" rel="noreferrer" className="px-6 py-3 glass text-foreground rounded-full font-semibold hover:bg-foreground/10 transition-colors flex items-center gap-2">
-                                        <Youtube className="w-4 h-4" /> Youtube
+                                        <FaYoutube className="w-4 h-4" /> Youtube
+                                    </a>
+                                )}
+                                {project.links.article && (
+                                    <a href={project.links.article} target="_blank" rel="noreferrer" className="px-6 py-3 glass text-foreground rounded-full font-semibold hover:bg-foreground/10 transition-colors flex items-center gap-2">
+                                        📄 Article
                                     </a>
                                 )}
                             </div>
