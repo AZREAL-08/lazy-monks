@@ -356,6 +356,7 @@ By providing geotagged, AI-verified proof of tree planting and care, we created 
     {
         id: "proj-6",
         title: "Urban Trust",
+        hackathon: "BGSIT Hackathon 2025",
         date: "2025-04",
         tagline: "Empowering citizens and authorities with AI-verified civic issue tracking.",
         description: "Urban Trust is a comprehensive platform designed to enhance urban community development. It tackles recurring civic issues like potholes and garbage dumps through AI-verified reporting, real-time smart map visualization, and an automated routing system for municipal officials.",
@@ -401,12 +402,13 @@ We designed Urban Trust to scale. Our future roadmap includes:
 3. **Severity-Based Validation:** Advanced AI models to automatically categorize the danger level of an issue (e.g., a massive sinkhole vs. a small pavement crack) to help municipal bodies prioritize interventions.
         `,
         imageFolder: "/projects/urbantrust",
-        thumbnail: "map.png",
+        thumbnail: "logo.jpeg",
         gallery: [
             "camera.png",
             "architecture.png",
-            "homepage.png",
             "profile.png",
+            "map.png",
+            "homepage.png"
         ],
         techStack: [
             "Next.js",
@@ -595,6 +597,324 @@ By bridging the gap between advanced Large Language Models and traditional cron-
         links: {
             github: "https://github.com/nikhil-r0/contractiq-backend",
             youtube: "https://youtu.be/BFNKKWBWCJk"
+        }
+    },
+    {
+        id: "proj-8",
+        title: "HerHealth",
+        hackathon: "She Builds AI",
+        date: "2024-11",
+        tagline: "Empowering rural women through an AI-driven, community-supported healthcare ecosystem.",
+        description: "HerHealth is a comprehensive digital platform connecting rural women with local healthcare centers and transparent donors. It features AI-powered symptom tracking, empathetic chatbot support, and proactive health monitoring.",
+        content: `
+### **Bridging the Rural Healthcare Gap**
+
+In rural areas, healthcare challenges extend far beyond limited resources—they are exacerbated by isolation, deep-rooted stigma around women's health issues, and a lack of timely support. For countless women, health problems go untreated for years simply due to a lack of accessible, trusted information.
+
+Built for the **She Builds AI** hackathon, **HerHealth** was created to tackle these challenges holistically. We recognized that a true solution needed to do more than just provide information; it needed to connect women directly with local healthcare centers and compassionate donors, building a connected, trusted ecosystem of support.
+
+---
+
+## 💡 The Three-Pillar Ecosystem
+
+We developed a cross-platform mobile application using **React Native**, designed specifically for accessibility in resource-limited settings. The platform is divided into three primary interconnected sections:
+
+### 1. For Women: The Personal Health Companion
+* **Health Tracking:** Users can monitor symptoms, track menstrual cycles, and receive medication reminders to gain accurate insights into their bodies.
+* **Empathetic AI Chatbot:** Powered by the **Google Gemini API**, this chatbot acts as an early-detection tool. We heavily refined the AI prompts to ensure responses are not only medically accurate but also highly empathetic and culturally sensitive, giving women the confidence to seek further assistance.
+
+### 2. For Healthcare Centers: Proactive Monitoring
+* Local healthcare providers are equipped with tools to monitor the health profiles of women in their jurisdiction. 
+* By analyzing symptom tracking data, the system flags severe cases early, allowing clinics to reach out proactively to those most at risk. 
+* Clinics can also verify medical needs and request external funds for their patients.
+
+### 3. For Donors: Transparent Impact
+* The platform features a transparent fundraising channel. 
+* Donors can view real-time details about women in need—fully verified by local healthcare providers—reassuring them of exactly how and where their contributions are being utilized.
+
+---
+
+## 🚧 Engineering for the Edge: Challenges & Learnings
+
+Building for rural users who may be experiencing a digital health tool for the first time presented unique engineering hurdles:
+
+* **Designing for Low-Bandwidth:** Internet access in rural areas can be intermittent. We focused heavily on building a lightweight app with aggressive caching strategies to minimize data usage and ensure usability under challenging network conditions.
+* **Data Sensitivity & Security:** Dealing with highly sensitive female health data was a primary concern. We utilized **Firebase** for its real-time capabilities while implementing robust security protocols and thoughtful data structuring to ensure complete privacy.
+* **Balancing AI Tone:** Creating an AI chatbot that is medically precise without sounding robotic was difficult. Achieving the right balance between direct medical advice and a supportive, comforting tone required extensive prompt engineering and testing.
+
+## 🚀 The Road Ahead
+
+HerHealth is just the beginning. Our ongoing roadmap includes expanding the web backend for healthcare centers, integrating automated AI-driven risk alerts, and building out comprehensive donor interaction reports. Our ultimate vision is to empower women with the tools they need to live healthier, safer lives through a globally supported ecosystem.
+        `,
+        imageFolder: "/projects/herhealth",
+        thumbnail: "chat.jpeg",
+        gallery: [
+            "donor-dashboard.jpeg",
+            "donors.jpeg"
+        ],
+        techStack: [
+            "React Native",
+            "Firebase",
+            "Google Gemini API",
+            "JavaScript"
+        ],
+        contributions: [
+            {
+                memberId: 1, // Nikhil R
+                roleInProject: "Mobile App & Backend Developer",
+                toolsUsed: ["React Native", "Firebase"],
+                summary: "Developed the cross-platform mobile application, engineered the low-bandwidth caching strategies, and structured the secure Firebase database."
+            },
+            {
+                memberId: 4, // Nishanth (or update based on actual team)
+                roleInProject: "AI Integrator",
+                toolsUsed: ["Google Gemini API"],
+                summary: "Engineered the prompts and integrated the Gemini API to create the empathetic, medically accurate health chatbot."
+            }
+        ],
+        links: {
+            github: "https://github.com/nikhil-r0/Her-Health",
+            youtube: "https://youtu.be/xRMC-jiz-B0?si=KntGbYmrGjnzXVxZ"
+        }
+    },
+    {
+        id: "proj-3",
+        title: "Sauda (सौदा)",
+        hackathon: "Syntax Error 2025",
+        date: "2025-10",
+        tagline: "A fair, community-driven Web3 marketplace where buying, selling, and bartering is as simple as it should be.",
+        description: "Sauda is a modern, zero-fee marketplace that reimagines online trading. It features a built-in barter system, real-time chat, and a crypto-staked trust system to ensure accountability and protect honest users.",
+        content: `
+### **Redefining the Online Marketplace**
+
+Most online marketplaces today feel outdated—plagued by paywalls for listings, fake buyers, and hardly any real sense of trust. We built **Sauda** (सौदा) to be a fresh, community-driven platform where you can buy, sell, or trade your stuff freely, safely, and without the usual hassle.
+
+**TL;DR:** Most marketplaces make you pay and pray. Sauda keeps it free, transparent, and community-first—where your reputation builds trust, and your deals speak for themselves.
+
+---
+
+## ✨ The Core Experience
+
+We stripped away the clutter and hidden fees to focus on what actually matters: connecting people who want to make a deal.
+
+* 💸 **List for Free. No Limits:** No posting fees. No ad boosts. No hidden paywalls. On Sauda, you can list as many items as you want—whether you’re selling something old or looking to make space, it’s always free.
+* 🔁 **Trade What You’ve Got:** Selling isn’t the only way to deal. With Sauda’s built-in barter system, you can propose trades directly. Swap what you don’t need for what you actually want, entirely handled within the platform.
+* 💬 **Chat Built Right In:** Once an offer or trade is made, a direct chat opens instantly so both parties can discuss details in real time—no sharing phone numbers, no external apps, no spam.
+* 🎨 **Clean, Fast, and Modern:** Built to be simple, fast, and clutter-free, ensuring an experience that feels natural whether you’re browsing, listing, or closing a deal.
+
+---
+
+## 🔒 A Real Trust System (Web3 Integration)
+
+We wanted to build a marketplace where reputation truly matters and carries real-world weight. 
+
+To achieve this, users can verify themselves by staking a small amount of cryptocurrency (currently deployed on the Sepolia testnet). Every successful deal positively affects their **trust score**, reflecting their reliability in the community. 
+
+Crucially, if someone’s trust drops due to dishonest behavior or scamming, a portion of their staked amount is **slashed**. This ensures strict accountability through real, tangible value. It’s a self-regulating system that actively rewards good behavior and protects honest users.
+
+---
+
+## 🚧 Challenges We Ran Into
+
+Building a hybrid Web2/Web3 platform came with a steep learning curve:
+
+* **Smart Contract Deployment:** Deploying our staking and slashing contract on the Sepolia testnet was tougher than expected. Getting reliable faucet ETH was frustratingly inconsistent. We had to explore multiple faucets, cross-reference our RPC nodes, and double-check our configurations before achieving a stable deployment.
+* **Real-Time Architecture:** Implementing the chat feature was another major hurdle. Setting up a real-time messaging system with a proper database structure in Supabase took a lot of trial and error. We heavily researched how real-world chat systems handle data flow and adapted a streamlined version that perfectly fit Sauda’s architecture without bloating the backend.
+
+Through these challenges, we learned how to troubleshoot under pressure, optimize WebSockets, and design highly reliable backend systems.
+        `,
+        imageFolder: "/projects/sauda",
+        thumbnail: "dashboard.png",
+        gallery: [
+            "create.png",
+            "dashboard.png",
+            "individual.png",
+            "listings.png"
+        ],
+        techStack: [
+            "Next.js",
+            "Supabase",
+            "Tailwind CSS",
+            "Solidity",
+            "Vercel"
+        ],
+        contributions: [
+            {
+                memberId: 1, // Nikhil R
+                roleInProject: "Full Stack & Web3 Developer",
+                toolsUsed: ["Next.js", "Solidity", "Supabase"],
+                summary: "Developed the smart contracts for the staking/slashing trust system on the Sepolia testnet and engineered the real-time chat backend."
+            },
+            {
+                memberId: 2, // Aryan
+                roleInProject: "UI/UX & Frontend Engineer",
+                toolsUsed: ["Next.js", "Tailwind CSS"],
+                summary: "Designed the clean, clutter-free marketplace interface and implemented the responsive frontend components."
+            }
+        ],
+        links: {
+            github: "https://github.com/nikhil-r0/sauda-web",
+            youtube: "https://youtu.be/Mb6F0mdX_24?si=bQm_NCM_mWDsX-Po"
+        }
+    },
+    {
+        id: "proj-9",
+        title: "ExportEase",
+        hackathon: "Amazon Sambhav 2024",
+        date: "2024-11", // Based on Nov 25, 2024
+        tagline: "An all-in-one AI platform simplifying global trade and compliance for SMBs.",
+        description: "ExportEase centralizes fragmented export resources, offering real-time tariff details, AI-driven onboarding guidance, and comprehensive compliance tools to help small and medium businesses navigate global trade effortlessly.",
+        content: `
+### **Democratizing Global Trade for SMBs**
+
+For small and medium businesses (SMBs), expanding into global markets is often a logistical nightmare. Exporters are forced to navigate a labyrinth of complex trade regulations, fragmented government resources, and obscure incentive programs. Finding accurate tariff details or understanding compliance requirements can take weeks of manual research.
+
+Built for the **Amazon Sambhav 2024** hackathon, **ExportEase** was designed to solve this exact problem. It acts as an intelligent, centralized platform that reduces the time, effort, and uncertainty exporters face when stepping onto the global stage.
+
+---
+
+## 🌟 The Core Ecosystem
+
+ExportEase replaces endless Google searches and confusing government portals with an intuitive, unified dashboard:
+
+* **Real-Time Tariff Intelligence:** We integrated the **US HTS (Harmonized Tariff Schedule) API** to fetch real-time tariff details based on HS codes. This ensures exporters get immediate, highly accurate duty data for their specific products.
+* **AI-Driven Onboarding:** Global trade isn't one-size-fits-all. We utilized **Google’s Gemini API** to generate customized, step-by-step onboarding instructions. By feeding the AI a custom dataset built from regulatory and incentive documents, the platform provides tailored guidance based on the user's specific export profile.
+* **Centralized Knowledge Hub:** We curated comprehensive guides covering compliance, documentation, and exporting best practices, alongside direct resources for official standards (like ASTM and CPSC) and vital incentive programs (like RoDTEP).
+* **Interactive Profiling:** An exporter-centric questionnaire dynamically shapes the user experience, paving the way for hyper-personalized insights.
+
+---
+
+## 🚧 Navigating the Data Chaos (Challenges)
+
+Building a centralized platform for international trade meant dealing with highly unstandardized data:
+
+* **Non-Standard HS Codes:** We quickly discovered that naming conventions and HS codes are incredibly inconsistent across different government documents and international databases. Mapping these inconsistencies to build a reliable search and integration pipeline was a major architectural hurdle.
+* **Fragmented Resources:** Compliance laws and incentive regulations are scattered across dozens of disconnected platforms. Consolidating this into a clean, queryable dataset required significant data processing and structuring.
+
+---
+
+## 🚀 The Future Roadmap
+
+While the hackathon phase established a powerful proof-of-concept, our vision for ExportEase is expansive. The upcoming roadmap includes:
+1. **ML-Based HS Code Finder:** Developing a Machine Learning tool to automatically identify correct HS codes based solely on natural language product descriptions.
+2. **Interactive Export Chatbot:** Upgrading the platform with an AI agent capable of instantly answering complex, highly specific export queries using our centralized cloud dataset.
+3. **Deep Incentive Integration:** Standardizing the chaotic HS code mappings to fully automate eligibility checks for programs like RoDTEP.
+
+ExportEase is our effort to address the complexities of exporting with modern technology, simplifying global trade for Indian SMBs one shipment at a time.
+        `,
+        imageFolder: "/projects/exportease",
+        thumbnail: "dashboard2.png",
+        gallery: [
+            "flowchart.png",
+            "dashboard.png",
+            "api.png",
+            "form.png",
+            "guide.png",
+            "summary.png"
+        ],
+        techStack: [
+            "React / Expo",
+            "Node.js / Python", // Update if a specific backend was used
+            "Google Gemini API",
+            "US HTS API",
+            "RESTful APIs"
+        ],
+        contributions: [
+            {
+                memberId: 1, // Nikhil R
+                roleInProject: "Full Stack & AI Integrator",
+                toolsUsed: ["Gemini API", "US HTS API", "Backend Framework"],
+                summary: "Integrated the Gemini API for custom onboarding instructions, connected the US HTS API for real-time tariff fetching, and architected the overall backend data flow."
+            },
+            {
+                memberId: 2, // Aryan (or update to actual team member)
+                roleInProject: "Frontend Developer",
+                toolsUsed: ["React/Expo", "UI Design"],
+                summary: "Built the interactive web interface, developed the curated guides section, and designed the exporter questionnaire."
+            }
+        ],
+        links: {
+            github: "https://github.com/nikhil-r0/exportease", // Update with actual if different
+            youtube: "https://youtu.be/S5BILKB3Ayo"
+        }
+    },
+    {
+        id: "proj-10",
+        title: "Green Terrace",
+        hackathon: "BuzzOnEarth Hackathon 2024",
+        date: "2024-10",
+        tagline: "An AI-driven ecosystem empowering urban terrace farmers with personalized crop insights.",
+        description: "Green Terrace transforms urban gardening by combining real-time weather data with machine learning to offer personalized crop recommendations. It features an Intel BERT-powered chatbot, plant stage recognition, and a community-driven marketplace.",
+        content: `
+### **Cultivating the Concrete Jungle**
+
+Urban terrace farming is rapidly growing as city dwellers look for sustainable ways to grow their own food. However, both beginners and experienced gardeners often struggle with knowing exactly *what* to plant and *when*, given the micro-climates of their specific rooftops. 
+
+Built for the **BuzzOnEarth India Hackathon 2024** at IIT Kanpur, **Green Terrace** bridges the gap between traditional gardening and modern AI. We created a supportive digital ecosystem tailored specifically for terrace farmers.
+
+---
+
+## 🌱 A Personalized Farming Ecosystem
+
+Green Terrace acts as a comprehensive digital companion for your garden, bringing together multiple tools into one accessible cross-platform mobile application:
+
+* **Personalized Crop Recommendations:** The core engine leverages real-time local weather data combined with a custom plant dataset. Whether you are growing flowers, vegetables, or fruits, the app tailors a highly specific, localized farming plan just for you.
+* **Intelligent Chatbot Assistant:** We integrated a custom chatbot to provide personalized, conversational support for terrace gardeners, answering specific questions about plant care and maintenance.
+* **Plant Stage Recognition:** A custom machine learning model trained to visually recognize and classify the different biological stages of plant growth.
+* **Community & Marketplace:** A dedicated space for users to buy and sell produce, share gardening tutorials, and connect directly with local nurseries and agricultural researchers.
+
+---
+
+## 🧠 Powered by Intel® AI
+
+A major focus of this project was leveraging cutting-edge, hardware-optimized AI tools. 
+* **Intel® Tiber Developer Cloud:** We utilized Intel's cloud-based AI development environment, giving us access to premium hardware to streamline our model training and deployment processes.
+* **HuggingFace & BERT:** The intelligent chatbot was implemented using **Intel’s BERT uncased model** from HuggingFace, fine-tuned for our specific agricultural use cases.
+* **OpenVINO™ Toolkit:** To ensure our plant stage recognition model could run efficiently, we optimized it using Intel’s OpenVINO toolkit, significantly enhancing inference performance for real-time crop monitoring. *(Note: As a hackathon prototype, the recommendation model currently runs locally).*
+
+---
+
+## 🚀 The Future Harvest (Roadmap)
+
+While the current mobile app offers a strong proof-of-concept for the community and marketplace pages, we have an ambitious roadmap to fully realize the platform's potential:
+1. **Visual Recommendations:** Allowing users to upload photos of their terrace space for spatially-aware crop suggestions.
+2. **Carbon Coin Incentives:** Introducing a blockchain-verified reward system where users earn "Carbon Coins" for sustainable gardening achievements, redeemable for real-world discounts.
+3. **Gamification:** Adding challenges, leaderboards, and social media integrations to engage younger generations in sustainable urban farming.
+        `,
+        imageFolder: "/projects/green-terrace",
+        thumbnail: "output.png",
+        gallery: [
+            "comparision.png",
+            "input.png",
+            "community.png",
+        ],
+        techStack: [
+            "Flutter",
+            "Dart",
+            "Python",
+            "Flask",
+            "Intel® OpenVINO™",
+            "Intel® Tiber Developer Cloud",
+            "HuggingFace (BERT)",
+            "Machine Learning"
+        ],
+        contributions: [
+            {
+                memberId: 1, // Nikhil R
+                roleInProject: "AI & Backend Engineer",
+                toolsUsed: ["Python", "Flask", "Intel OpenVINO", "HuggingFace"],
+                summary: "Developed the plant stage recognition model, optimized it using Intel OpenVINO, built the Flask backend, and integrated the BERT-uncased chatbot for personalized user support."
+            },
+            {
+                memberId: 2, // Update with actual team member if applicable
+                roleInProject: "Mobile App Developer",
+                toolsUsed: ["Flutter", "Dart", "UI/UX Design"],
+                summary: "Built the cross-platform mobile app interface using Flutter, including the community pages and the marketplace placeholder."
+            }
+        ],
+        links: {
+            github: "https://github.com/nikhil-r0/Green-Terrace",
+            youtube: "https://youtu.be/YrdPrBv_bgw"
         }
     }
 ];

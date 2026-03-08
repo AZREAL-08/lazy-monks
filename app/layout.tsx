@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { ThemeToggle } from "./components/ThemeToggle";
 import ParticlesBackground from "./components/ParticlesBackground";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,9 @@ export default function RootLayout({
             <div className="relative z-10 w-full h-full pointer-events-none">
               {/* Re-enable pointer events for actual content elements */}
               <div className="pointer-events-auto">
+                <Link href="/" className="fixed top-6 left-6 z-50 glass p-1.5 rounded-full hover:scale-110 transition-transform flex items-center justify-center overflow-hidden">
+                  <img src="/logo.svg" alt="Lazy Monks" className="w-10 h-10 rounded-full object-cover" />
+                </Link>
                 <ThemeToggle />
                 {children}
               </div>

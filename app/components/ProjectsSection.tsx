@@ -2,8 +2,13 @@
 
 import { motion } from "framer-motion";
 import { projects } from "../data/content";
-import { Globe } from "lucide-react";
+import { Globe, ArrowRight } from "lucide-react";
 import { FaGithub, FaYoutube } from "react-icons/fa"
+import Link from "next/link";
+
+const latestProjects = [...projects]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .slice(0, 4);
 
 const containerVariants = {
     hidden: { opacity: 0 },
@@ -41,7 +46,7 @@ export default function ProjectsSection() {
                 viewport={{ once: true, margin: "-100px" }}
                 className="flex flex-col gap-12"
             >
-                {projects.map((project, index) => (
+                {latestProjects.map((project, index) => (
                     <motion.div
                         key={project.id}
                         variants={itemVariants}
@@ -104,6 +109,17 @@ export default function ProjectsSection() {
                     </motion.div>
                 ))}
             </motion.div>
+
+            {/* View All Button */}
+            <div className="text-center mt-16">
+                <Link
+                    href="/projects"
+                    className="inline-flex items-center gap-2 px-8 py-4 glass rounded-full font-semibold text-foreground hover:bg-foreground/10 transition-colors group"
+                >
+                    View All Projects
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </Link>
+            </div>
         </section>
     );
 }
