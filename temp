@@ -193,8 +193,13 @@ Throughout the development for SIH 2025, our team pushed the boundaries of what 
         roleInProject: "AI & Data Engineer",
         toolsUsed: ["Python", "IndicBERT", "PyTorch"],
         summary: "Developed the social media sentiment analysis pipeline and the image verification module."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend Architect & Data Engineer",
+        toolsUsed: ["Python", "PostGIS", "Docker"],
+        summary: "Designed the PostGIS schema and API endpoints, implemented resilient data ingestion pipelines for P2P/mesh relays, and optimized spatial clustering for real-time incident aggregation."
       }
-      // Add Aryan and Prajwal's contributions here as needed
     ],
     links: {
       github: "https://github.com/nikhil-r0/samudra-prahari-ecosystem",
@@ -266,8 +271,13 @@ Veris transforms hours of manual open-source intelligence (OSINT) gathering into
         roleInProject: "UI/UX & Frontend",
         toolsUsed: ["Next.js", "Tailwind CSS"],
         summary: "Designed the command-center aesthetic, interactive graphs, and the particle animations for the dashboard."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & Data Engineer",
+        toolsUsed: ["Python", "FastAPI", "LangGraph"],
+        summary: "Built and hardened the evidence ingestion APIs, implemented scalable storage and caching for large evidence sets, and integrated backend connectors to external data sources used by the LangGraph agent."
       }
-      // Add Prajwal/Nishanth contributions as needed
     ],
     links: {
       github: "https://github.com/nikhil-r0/veris-ecosystem",
@@ -346,6 +356,12 @@ By providing geotagged, AI-verified proof of tree planting and care, we created 
         roleInProject: "UI/UX & Frontend Developer",
         toolsUsed: ["Next.js", "Figma", "Geolocation"],
         summary: "Designed the interactive Maps feature, the Eco-Leaderboard, and the conversational UI for the plant chatbot."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend Engineer & DevOps",
+        toolsUsed: ["Flask", "PostgreSQL", "AWS"],
+        summary: "Implemented the quest engine backend, built the media ingestion and verification upload pipeline, and created CI/CD deployment scripts to keep the service reliable at scale."
       }
     ],
     links: {
@@ -431,6 +447,12 @@ We designed Urban Trust to scale. Our future roadmap includes:
         roleInProject: "Frontend Developer",
         toolsUsed: ["Next.js", "React Native", "Firebase"],
         summary: "Developed the intuitive mobile and web interfaces, implemented the real-time map visualizations, and integrated regional language support."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & Geospatial Engineer",
+        toolsUsed: ["PostGIS", "Python", "Firebase"],
+        summary: "Built spatial clustering and ward-routing logic using PostGIS, optimized duplicate-detection heuristics, and implemented backend endpoints for municipal routing and analytics."
       }
     ],
     links: {
@@ -516,6 +538,12 @@ To overcome these roadblocks, we leaned heavily on community resources—from Yo
         roleInProject: "World Designer & UI",
         toolsUsed: ["Tiled", "Figma"],
         summary: "Designed the 2D open world, developer towers, and the UI for the game hosting interfaces."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Server & Real-time Systems Engineer",
+        toolsUsed: ["WebSockets", "Node.js", "TypeScript"],
+        summary: "Implemented the real-time multiplayer backend, optimized WebSocket scaling and state-sync, and implemented secure GameCoin transaction endpoints."
       }
     ],
     links: {
@@ -592,6 +620,12 @@ By bridging the gap between advanced Large Language Models and traditional cron-
         roleInProject: "AI Integration Engineer",
         toolsUsed: ["Gemini API", "Python"],
         summary: "Developed the prompt engineering and integration logic with the Gemini API to accurately extract unstructured data from legal PDFs."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend Engineer & Scheduler",
+        toolsUsed: ["Python", "Flask", "Firebase", "SMTP", "Celery"],
+        summary: "Implemented the secure file upload endpoints, integrated the document extraction workflow with the backend scheduler, and built reliable notification scheduling and retry logic for email delivery."
       }
     ],
     links: {
@@ -670,6 +704,12 @@ HerHealth is just the beginning. Our ongoing roadmap includes expanding the web 
         roleInProject: "AI Integrator",
         toolsUsed: ["Google Gemini API"],
         summary: "Engineered the prompts and integrated the Gemini API to create the empathetic, medically accurate health chatbot."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & Security Engineer",
+        toolsUsed: ["Firebase", "Docker", "Python"],
+        summary: "Implemented backend endpoints for clinic integrations, enforced data access controls and encryption-at-rest strategies, and built donor transparency reporting modules."
       }
     ],
     links: {
@@ -750,6 +790,12 @@ Through these challenges, we learned how to troubleshoot under pressure, optimiz
         roleInProject: "UI/UX & Frontend Engineer",
         toolsUsed: ["Next.js", "Tailwind CSS"],
         summary: "Designed the clean, clutter-free marketplace interface and implemented the responsive frontend components."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & Web3 Integration Engineer",
+        toolsUsed: ["Supabase", "Node.js", "Solidity"],
+        summary: "Built the trust-scoring backend, implemented staking/slashing integration hooks, and hardened the chat backend for production-ready reliability."
       }
     ],
     links: {
@@ -831,6 +877,12 @@ ExportEase is our effort to address the complexities of exporting with modern te
         roleInProject: "Frontend Developer",
         toolsUsed: ["React/Expo", "UI Design"],
         summary: "Built the interactive web interface, developed the curated guides section, and designed the exporter questionnaire."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & API Integrator",
+        toolsUsed: ["Node.js", "Python", "US HTS API"],
+        summary: "Designed the API gateway and caching layer for tariff lookups, implemented rate-limits and retries, and ensured consistent data normalization across disparate tariff sources."
       }
     ],
     links: {
@@ -910,6 +962,12 @@ While the current mobile app offers a strong proof-of-concept for the community 
         roleInProject: "Mobile App Developer",
         toolsUsed: ["Flutter", "Dart", "UI/UX Design"],
         summary: "Built the cross-platform mobile app interface using Flutter, including the community pages and the marketplace placeholder."
+      },
+      {
+        memberId: 3, // Prajwal S
+        roleInProject: "Backend & MLOps Engineer",
+        toolsUsed: ["Python", "Flask", "Docker", "OpenVINO"],
+        summary: "Containerized the inference pipeline, deployed model endpoints, implemented batching and request queuing for inference, and set up monitoring for model performance in production."
       }
     ],
     links: {
