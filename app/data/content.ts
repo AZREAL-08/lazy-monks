@@ -62,7 +62,7 @@ export const teamMembers: TeamMember[] = [
     name: "Nikhil R",
     role: "Full Stack Developer",
     bio: "Passionate about creating scalable web applications and intuitive interfaces.",
-    image: "/Nikhil.jpeg",
+    image: "/Nikhil.jpg",
     skills: ["React", "Next.js", "Node.js", "TypeScript"],
     socials: {
       github: "https://github.com/nikhil-r0",
@@ -106,6 +106,70 @@ export const teamMembers: TeamMember[] = [
       linkedin: "https://www.linkedin.com/in/nishanth-antony-b60110289/",
     }
   }
+];
+
+// =============================================================================
+// GUEST MEMBERS
+// =============================================================================
+//
+// 🎉 Want to be featured as a Guest Member on our portfolio?
+//
+// HOW TO CONTRIBUTE:
+// 1. Fork this repository
+// 2. Add your entry to the `guestMembers` array below
+// 3. Place your profile photo in the /public directory (e.g., /public/guests/YourName.jpeg)
+// 4. Push your changes and open a Pull Request
+//
+// REQUIRED FIELDS:
+// ┌─────────────┬──────────┬──────────────────────────────────────────────────┐
+// │ Field       │ Type     │ Description                                      │
+// ├─────────────┼──────────┼──────────────────────────────────────────────────┤
+// │ name        │ string   │ Your full name (as you'd like it displayed)      │
+// │ role        │ string   │ Your title, e.g. "Frontend Developer"            │
+// │ bio         │ string   │ A short bio (1-2 sentences about you)            │
+// │ image       │ string   │ Path to your photo in /public, e.g. "/guests/X"  │
+// │ skills      │ string[] │ 3-6 of your top technical skills                 │
+// │ socials     │ object   │ At least one: github, linkedin, portfolio        │
+// │ project     │ string   │ Which Lazy Monks project you contributed to      │
+// │ contribution│ string   │ A brief description of what you worked on        │
+// └─────────────┴──────────┴──────────────────────────────────────────────────┘
+//
+// EXAMPLE ENTRY:
+// {
+//   name: "Jane Doe",
+//   role: "UI/UX Designer",
+//   bio: "Passionate about creating delightful user experiences.",
+//   image: "/guests/JaneDoe.jpeg",
+//   skills: ["Figma", "CSS", "React", "Accessibility"],
+//   socials: {
+//     github: "https://github.com/janedoe",
+//     linkedin: "https://linkedin.com/in/janedoe",
+//     portfolio: "https://janedoe.dev"
+//   },
+//   project: "Samudra Prahari",
+//   contribution: "Redesigned the mobile app onboarding flow and created accessibility guidelines."
+// }
+//
+// GUIDELINES:
+// - Keep your bio concise and professional
+// - Use a clear, well-lit photo (square aspect ratio works best)
+// - List skills that are relevant to your contribution
+// - Your PR will be reviewed and merged by a core team member
+// =============================================================================
+
+export interface GuestMember {
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+  skills: string[];
+  socials: SocialLinks;
+  project: string;         // Name of the project you contributed to
+  contribution: string;    // Brief description of your contribution
+}
+
+export const guestMembers: GuestMember[] = [
+  // Add your entry here! See the guide above for the required structure.
 ];
 
 export const projects: Project[] = [
