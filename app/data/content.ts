@@ -78,7 +78,7 @@ export const teamMembers: TeamMember[] = [
         socials: {
             github: "https://github.com/AZREAL-08",
             linkedin: "https://www.linkedin.com/in/aryan-mishra-78205129a",
-            portfolio: "https://example.com"
+            portfolio: "https://aryanmishra.dev"
         }
     },
     {
@@ -187,6 +187,12 @@ Throughout the development for SIH 2025, our team pushed the boundaries of what 
                 roleInProject: "Lead Developer / Architect",
                 toolsUsed: ["React Native", "Next.js", "Supabase"],
                 summary: "Architected the ecosystem, integrated BLE mesh networking, and built the core web dashboard."
+            },
+            {
+                memberId: 2, // Aryan
+                roleInProject: "Frontend Developer",
+                toolsUsed: ["React Native", "Expo", "UI Design"],
+                summary: "Built the interactive web interface, developed the curated guides section, and designed the exporter questionnaire."
             },
             {
                 memberId: 4, // Nishanth
@@ -427,7 +433,7 @@ We designed Urban Trust to scale. Our future roadmap includes:
                 summary: "Architected the monorepo structure, developed the Flask API, and integrated Gemini with LangGraph for the AI-verified issue validation pipeline."
             },
             {
-                memberId: 4, // Nishanth Antony (Based on UI screenshots)
+                memberId: 2, // Aryan
                 roleInProject: "Frontend Developer",
                 toolsUsed: ["Next.js", "React Native", "Firebase"],
                 summary: "Developed the intuitive mobile and web interfaces, implemented the real-time map visualizations, and integrated regional language support."
@@ -500,7 +506,7 @@ To overcome these roadblocks, we leaned heavily on community resources—from Yo
         techStack: [
             "Phaser",
             "Tiled Map Editor",
-            " TypeScript",
+            "TypeScript",
             "WebSockets",
             "AI Tools"
         ],
@@ -515,7 +521,7 @@ To overcome these roadblocks, we leaned heavily on community resources—from Yo
                 memberId: 2, // Aryan
                 roleInProject: "World Designer & UI",
                 toolsUsed: ["Tiled", "Figma"],
-                summary: "Designed the 2D open world, developer towers, and the UI for the game hosting interfaces."
+                summary: "Designed the 2D open world, developer towers, and the UI for the game hosting interfaces.Also made a interactive games for the platform"
             }
         ],
         links: {
@@ -586,6 +592,12 @@ By bridging the gap between advanced Large Language Models and traditional cron-
                 roleInProject: "Backend Developer & System Architect",
                 toolsUsed: ["Python", "Flask", "Firebase", "SMTP"],
                 summary: "Architected the backend application, integrated the email scheduling system, and handled the Firebase database operations."
+            },
+            {
+                memberId: 2, // Aryan
+                roleInProject: "Frontend Developer",
+                toolsUsed: ["HTML", "CSS", "Vanilla JS"],
+                summary: "Developed a clean, server-rendered dashboard interface offering a straightforward way for users to upload documents and view active contract timelines."
             },
             {
                 memberId: 4, // Nishanth
@@ -664,6 +676,12 @@ HerHealth is just the beginning. Our ongoing roadmap includes expanding the web 
                 roleInProject: "Mobile App & Backend Developer",
                 toolsUsed: ["React Native", "Firebase"],
                 summary: "Developed the cross-platform mobile application, engineered the low-bandwidth caching strategies, and structured the secure Firebase database."
+            },
+            {
+                memberId: 2, // Aryan
+                roleInProject: "Frontend Developer",
+                toolsUsed: ["React Native", "JavaScript", "Next.js"],
+                summary: "Developed the web dashboard for healthcare centers and helped with the frontend architecture for the React Native mobile application."
             },
             {
                 memberId: 4, // Nishanth (or update based on actual team)
@@ -827,10 +845,10 @@ ExportEase is our effort to address the complexities of exporting with modern te
                 summary: "Integrated the Gemini API for custom onboarding instructions, connected the US HTS API for real-time tariff fetching, and architected the overall backend data flow."
             },
             {
-                memberId: 2, // Aryan (or update to actual team member)
+                memberId: 2, // Aryan
                 roleInProject: "Frontend Developer",
-                toolsUsed: ["React/Expo", "UI Design"],
-                summary: "Built the interactive web interface, developed the curated guides section, and designed the exporter questionnaire."
+                toolsUsed: ["Next.js", "Tailwind CSS", "UI Design"],
+                summary: "Developed the intuitive, unified dashboard and user interface for the global trade and compliance platform."
             }
         ],
         links: {
@@ -906,7 +924,7 @@ While the current mobile app offers a strong proof-of-concept for the community 
                 summary: "Developed the plant stage recognition model, optimized it using Intel OpenVINO, built the Flask backend, and integrated the BERT-uncased chatbot for personalized user support."
             },
             {
-                memberId: 2, // Update with actual team member if applicable
+                memberId: 3, // Update with actual team member if applicable
                 roleInProject: "Mobile App Developer",
                 toolsUsed: ["Flutter", "Dart", "UI/UX Design"],
                 summary: "Built the cross-platform mobile app interface using Flutter, including the community pages and the marketplace placeholder."

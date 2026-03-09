@@ -52,7 +52,7 @@ export default async function ProjectPage(props: PageProps<'/projects/[projectid
                 {/* Back button overlay */}
                 <Link
                     href="/projects"
-                    className="absolute top-6 left-6 z-20 px-4 py-2 glass rounded-full text-sm font-medium text-foreground/80 hover:text-foreground transition-colors flex items-center gap-2"
+                    className="absolute top-6 left-24 z-20 px-4 py-2 glass rounded-full text-sm font-medium text-foreground/80 hover:text-foreground transition-colors flex items-center gap-2"
                 >
                     <ArrowLeft className="w-4 h-4" /> Back
                 </Link>
