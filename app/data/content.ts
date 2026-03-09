@@ -87,7 +87,7 @@ export const teamMembers: TeamMember[] = [
     role: "Backend Architect",
     bio: "Building robust APIs, managing databases, and ensuring system reliability.",
     image: "/Vade.jpeg",
-    skills: ["Python", "PostgreSQL", "Docker", "AWS"],
+    skills: ["Python", "PostgreSQL", "Docker", "Cloud Computing", "Rust"],
     socials: {
       github: "https://github.com/vanguard-bit",
       linkedin: "https://www.linkedin.com/in/prajwal-s-061b82334/",
@@ -201,10 +201,10 @@ Throughout the development for SIH 2025, our team pushed the boundaries of what 
         summary: "Developed the social media sentiment analysis pipeline and the image verification module."
       },
       {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend Architect & Geospatial Engineer",
-        toolsUsed: ["Python", "PostGIS", "Docker"],
-        summary: "Designed the PostGIS schema, implemented resilient API endpoints for ingestion from P2P/mesh relays, and optimized spatial clustering and query performance for real-time incident aggregation."
+        memberId: 3,
+        roleInProject: "AI Scraper Engineer",
+        toolsUsed: ["Python"],
+        summary: "Developed automated Python pipelines to monitor social media platforms like X and Instagram for real-time disaster indicators, including de-duplication and basic verification of incoming posts."
       }
     ],
     links: {
@@ -265,10 +265,10 @@ This autonomous looping means the agent can go down rabbit holes, hit dead ends,
         summary: "Designed the command-center aesthetic, interactive graphs, and the particle animations for the dashboard."
       },
       {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend & Data Engineer",
-        toolsUsed: ["Python", "FastAPI", "PostgreSQL", "Redis"],
-        summary: "Built and hardened the evidence ingestion APIs, implemented scalable storage and caching for large evidence sets, and integrated backend connectors to external data sources used by the LangGraph agent."
+        memberId: 3,
+        roleInProject: "AI Engineer",
+        toolsUsed: ["Python", "LangGraph"],
+        summary: "Implemented and collaborated on the Verifier and Refiner nodes in the LangGraph pipeline, enabling evidence verification and iterative investigation through self-evaluation and query refinement."
       },
       {
         memberId: 4, // Nishanth Antony
@@ -330,12 +330,6 @@ To keep users engaged, we introduced a dynamic quest system:
         roleInProject: "UI/UX Designer",
         toolsUsed: ["Figma", "Geolocation"],
         summary: "Designed the interactive map interface, the Eco-Leaderboard visuals, and the conversational UI layouts for the plant chatbot."
-      },
-      {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend Engineer & DevOps",
-        toolsUsed: ["Flask", "PostgreSQL", "AWS", "Docker"],
-        summary: "Implemented the quest engine backend, built the media ingestion and verification upload pipeline, and created CI/CD deployment scripts to keep the service reliable at scale."
       },
       {
         memberId: 4, // Nishanth Antony
@@ -474,10 +468,10 @@ GameNest solves the isolation of indie development by offering a 2D open-world p
         summary: "Designed the 2D open world, developer towers, and the UI for the game hosting interfaces. Also made interactive mini-games for the platform."
       },
       {
-        memberId: 3, // Prajwal S
-        roleInProject: "Server & Real-time Systems Engineer",
-        toolsUsed: ["WebSockets", "Node.js", "TypeScript", "Docker"],
-        summary: "Implemented the real-time multiplayer backend, optimized WebSocket scaling and state-sync, and implemented secure GameCoin transaction endpoints and server deployment pipelines."
+        memberId: 3,
+        roleInProject: "Mini-Game Developer",
+        toolsUsed: ["JavaScript", "CSS"],
+        summary: "Developed a small interactive mini-game using JavaScript and CSS designed to teach and reinforce CSS concepts through gameplay within the GameNest platform."
       },
       {
         memberId: 4, // Nishanth Antony
@@ -540,12 +534,6 @@ Built for the **Google Solutions Challenge 2025**, **ContractIQ** eliminates thi
         toolsUsed: ["Gemini API", "Python"],
         summary: "Developed the prompt engineering and integration logic with the Gemini API to accurately extract unstructured data from legal PDFs."
       },
-      {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend Engineer & Scheduler",
-        toolsUsed: ["Python", "Flask", "Firebase", "SMTP", "Celery"],
-        summary: "Implemented secure file upload endpoints, integrated the document extraction workflow with the backend scheduler, and built reliable notification scheduling and retry logic for email delivery."
-      }
     ],
     links: {
       github: "https://github.com/nikhil-r0/contractiq-backend",
@@ -597,12 +585,6 @@ Built for the **She Builds AI** hackathon, **HerHealth** was created to tackle t
         toolsUsed: ["Google Gemini API", "Prompt Engineering"],
         summary: "Designed and implemented the AI-powered health assistant by integrating the Google Gemini API. Engineered structured prompts and response flows to create an empathetic chatbot capable of guiding users through symptom tracking, providing medically relevant information, and offering supportive conversational interactions tailored for rural healthcare contexts."
       },
-      {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend & Security Engineer",
-        toolsUsed: ["Firebase", "Docker", "Python"],
-        summary: "Implemented backend endpoints for clinic integrations, enforced data access controls and encryption-at-rest strategies, and built donor transparency reporting modules."
-      }
     ],
     links: {
       github: "https://github.com/nikhil-r0/Her-Health",
@@ -698,12 +680,6 @@ Built for the **Amazon Sambhav 2024** hackathon, **ExportEase** was designed to 
         roleInProject: "Frontend Developer",
         toolsUsed: ["HTML", "CSS", "JavaScript"],
         summary: "Developed the intuitive, unified dashboard and user interface for the global trade and compliance platform."
-      },
-      {
-        memberId: 3, // Prajwal S
-        roleInProject: "Backend & API Integrator",
-        toolsUsed: ["Python", "Flask"],
-        summary: "Designed the API gateway and caching layer for tariff lookups, implemented rate-limits and retries, and ensured consistent data normalization across disparate tariff sources."
       },
       {
         memberId: 4, // Nishanth Antony
