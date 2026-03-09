@@ -36,6 +36,7 @@ export interface Project {
   title: string;
   hackathon?: string;
   date: string;
+  featured: boolean;     // Show on the main page
 
   // Descriptions
   tagline: string;
@@ -113,6 +114,7 @@ export const projects: Project[] = [
     title: "Samudra Prahari",
     hackathon: "SIH 2025",
     date: "2025-09",
+    featured: true,
     tagline: "Coastal Intelligence Ecosystem bridging the information gap during hazards.",
     description: "A resilient, end-to-end platform designed to bridge the information gap during coastal hazards. It transforms everyday citizen smartphones and social media streams into a verified, real-time intelligence grid, ensuring that authorities can act when seconds matter most.",
     content: `
@@ -217,6 +219,7 @@ Throughout the development for SIH 2025, our team pushed the boundaries of what 
     title: "Veris Truth Engine",
     hackathon: "Recurzive V2",
     date: "2025-09",
+    featured: true,
     tagline: "An autonomous investigative AI agent for automated reasoning and evidence verification.",
     description: "Veris Ecosystem is a full-stack platform for an autonomous investigative AI agent, using a Python/LangGraph backend and Next.js frontend to enable AI-driven investigation, reasoning, and interactive visualization of evidence and insights.",
     content: `
@@ -287,6 +290,7 @@ This autonomous looping means the agent can go down rabbit holes, hit dead ends,
     title: "Green Quest",
     hackathon: "Social Hackathon 2025",
     date: "2025-05",
+    featured: true,
     tagline: "Gamifying urban sustainability by turning citizens into guardians of local plants.",
     description: "Green Quest tackles the urban green crisis by transforming plant care into an engaging, gamified experience. Users can adopt nearby plants on a map, complete AI-verified care quests, and even converse with their plants through a unique AI-driven personality chatbot.",
     content: `
@@ -348,6 +352,7 @@ To keep users engaged, we introduced a dynamic quest system:
     title: "Urban Trust",
     hackathon: "BGSIT Hackathon 2025",
     date: "2025-04",
+    featured: false,
     tagline: "Empowering citizens and authorities with AI-verified civic issue tracking.",
     description: "Urban Trust is a comprehensive platform designed to enhance urban community development. It tackles recurring civic issues like potholes and garbage dumps through AI-verified reporting, real-time smart map visualization, and an automated routing system for municipal officials.",
     content: `
@@ -419,6 +424,7 @@ We engineered a platform that bridges the trust gap between citizens and the gov
     title: "GameNest",
     hackathon: "NMIT Hacks 2025",
     date: "2025-05",
+    featured: false,
     tagline: "Gamifying the game development journey through a 2D open-world collaborative platform.",
     description: "GameNest is a 2D open-world platform that gamifies game development. Indie developers can host their games in virtual towers, earning 'GameCoins' by playing, collaborating, and reviewing others' work to foster a community-driven adventure.",
     content: `
@@ -489,6 +495,7 @@ GameNest solves the isolation of indie development by offering a 2D open-world p
     title: "Contract IQ",
     hackathon: "Google Solutions Challenge 2025",
     date: "2025-04",
+    featured: false,
     tagline: "An automated AI-driven notification system for intelligent digital contract management.",
     description: "ContractIQ automates the extraction of key contract details, calculates termination dates, and schedules timely email alerts using the Gemini API and Firebase, ensuring you never miss a critical deadline.",
     content: `
@@ -545,6 +552,7 @@ Built for the **Google Solutions Challenge 2025**, **ContractIQ** eliminates thi
     title: "HerHealth",
     hackathon: "She Builds AI",
     date: "2024-11",
+    featured: true,
     tagline: "Empowering rural women through an AI-driven, community-supported healthcare ecosystem.",
     description: "HerHealth is a comprehensive digital platform connecting rural women with local healthcare centers and transparent donors. It features AI-powered symptom tracking, empathetic chatbot support, and proactive health monitoring.",
     content: `
@@ -596,6 +604,7 @@ Built for the **She Builds AI** hackathon, **HerHealth** was created to tackle t
     title: "Sauda (सौदा)",
     hackathon: "Syntax Error 2025",
     date: "2025-10",
+    featured: false,
     tagline: "A fair, community-driven Web3 marketplace where buying, selling, and bartering is as simple as it should be.",
     description: "Sauda is a modern, zero-fee marketplace that reimagines online trading. It features a built-in barter system, real-time chat, and a crypto-staked trust system to ensure accountability and protect honest users.",
     content: `
@@ -642,6 +651,7 @@ Most online marketplaces today feel outdated—plagued by paywalls for listings,
     title: "ExportEase",
     hackathon: "Amazon Sambhav 2024",
     date: "2024-11", // Based on Nov 25, 2024
+    featured: false,
     tagline: "An all-in-one AI platform simplifying global trade and compliance for SMBs.",
     description: "ExportEase centralizes fragmented export resources, offering real-time tariff details, AI-driven onboarding guidance, and comprehensive compliance tools to help small and medium businesses navigate global trade effortlessly.",
     content: `
@@ -698,6 +708,7 @@ Built for the **Amazon Sambhav 2024** hackathon, **ExportEase** was designed to 
     title: "Green Terrace",
     hackathon: "BuzzOnEarth Hackathon 2024",
     date: "2024-10",
+    featured: false,
     tagline: "An AI-driven ecosystem empowering urban terrace farmers with personalized crop insights.",
     description: "Green Terrace transforms urban gardening by combining real-time weather data with machine learning to offer personalized crop recommendations. It features an Intel BERT-powered chatbot, plant stage recognition, and a community-driven marketplace.",
     content: `
